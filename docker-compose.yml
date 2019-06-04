@@ -6,7 +6,7 @@ services:
     restart: always
     ports:
       - "127.0.0.1:27017:27017"
-      - "172.17.0.1:27017:27017"
+      #- "172.17.0.1:27017:27017"
     volumes:
       - ${HOME}/Mongo4/db:/data/db:Z
       - ${HOME}/Mongo4/configdb:/data/configdb:Z
